@@ -1,0 +1,17 @@
+#pmiVal,
+#prevPmiVal,
+#pmiScore {
+    border: 2rem;
+    border-radius: 0ex;
+    width: 100%;
+    background-color: #45b39d;
+    text-align: center;
+}
+
+#card {
+    background-color: #45b39d;
+}
+
+.scoreHead {
+    text-align: center;
+}
