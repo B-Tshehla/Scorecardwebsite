@@ -14,30 +14,33 @@ function getPMIScore() {
         } else {
             score = aboveGrowing();
         }
+
         document.getElementById("card").style.backgroundColor = bgColor;
         document.getElementById("card").style.color = " #5d6d7e";
-        document.getElementById("pmiVal").style.backgroundColor = "#e6b0aa";
-        document.getElementById("prevPmiVal").style.backgroundColor = "#e6b0aa";
-        document.getElementById("pmiScore").style.backgroundColor = "#e6b0aa";
+        document.getElementById("pmiVal").style.backgroundColor = bgColor;
+        document.getElementById("prevPmiVal").style.backgroundColor = bgColor;
+        document.getElementById("pmiScore").style.backgroundColor = bgColor;
         document.getElementById("card").style.color = "#273746"
         document.getElementById("pmiScore").value = score;
 
         //alert(bgColor + "\t" + score);
 
     } else {
-        bgColor = " #cd6155";
+        bgColor = "#4287f5";
         if (pmiVal > prevPmiVal) {
             score = belowGrowing();
         } else {
             score = belowSlowing();
         }
+        document.getElementById("card").style.backgroundColor = bgColor;
+        document.getElementById("card").style.color = " #5d6d7e";
+        document.getElementById("pmiVal").style.backgroundColor = bgColor;
+        document.getElementById("prevPmiVal").style.backgroundColor = bgColor;
+        document.getElementById("pmiScore").style.backgroundColor = bgColor;
+        document.getElementById("card").style.color = "#273746"
+        document.getElementById("pmiScore").value = score;
 
-
-        alert(bgColor + "\t" + score);
     }
-
-
-
 
 }
 
@@ -146,24 +149,24 @@ function belowGrowing() {
     }
     if (Math.round(change) == 2) {
 
-        score = 1;
+        score = -1;
         return score;
     }
     if (Math.round(change) == 3) {
-        score = 2;
+        score = -2;
         return score;
     }
     if (Math.round(change) == 4) {
-        score = 3;
+        score = -3;
         return score;
     }
     if (Math.round(change) == 5) {
-        score = 4;
+        score = -4;
         return score;
     }
 
     if (Math.round(change) < 5) {
-        score = 5;
+        score = -5;
         return score;
     }
 }
