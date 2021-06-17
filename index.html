@@ -16,37 +16,78 @@
     <div class="container-fluid">
         <h1>Scorecards</h1>
 
-        <div class="card" id="card" style="width: 18rem;">
-            <img src="images/usa.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">ISM/Manufacturing PMI</h5>
-                <div class="row">
-                    <div class="col">
-                        <p class="paraIn"> Please Enter Actual Data:</p>
 
-                        <input type="text" id="pmiVal" placeholder="Current PMI value....">
+        <div class=" row">
+
+            <div class="col-lg-6 mb-4">
+
+                <div class="card" id="card" style="width: 18rem;">
+
+                    <img src="images/usa.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="card-title">ISM/Manufacturing PMI</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Actual Data:</p>
+
+                                <input type="text" id="pmiVal" placeholder="Current PMI value....">
+                            </div>
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Previous Data:</p>
+
+                                <input type="text" id="prevPmiVal" placeholder="Previous PMI value....">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="scoreHead card-title"> TOTAL SCORE : </h5>
+                        </div>
+                        <div>
+
+                            <input id="pmiScore" type="text">
+                        </div>
+
+
+                        <a href="#" class="btn btn-primary" onclick="getPMIScore();">Generate Score</a>
                     </div>
-                    <div class="col">
-                        <p class="paraIn"> Please Enter Previous Data:</p>
-
-                        <input type="text" id="prevPmiVal" placeholder="Previous PMI value....">
-                    </div>
                 </div>
-                <div>
-                    <h5 class="scoreHead card-title"> TOTAL SCORE : </h5>
-                </div>
-                <div>
-
-                    <input id="pmiScore" type="text">
-                </div>
-
-
-                <a href="#" class="btn btn-primary" onclick="getPMIScore();">Generate Score</a>
             </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card" id="nmi-card" style="width: 18rem;">
+                    <img src="images/usa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ISM/Non Manufacturing NMI</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Actual Data:</p>
+
+                                <input type="text" id="nmiVal" placeholder="Current NMI value....">
+                            </div>
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Previous Data:</p>
+
+                                <input type="text" id="prevNmiVal" placeholder="Previous NMI value....">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="scoreHead card-title"> TOTAL SCORE : </h5>
+                        </div>
+                        <div>
+
+                            <input id="nmiScore" type="text">
+                        </div>
+
+
+                        <a href="#" class="btn btn-primary" onclick="getPMIScore();">Generate Score</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-
     </div>
+
 
 
     <!-- JavaScript Bundle with Popper -->

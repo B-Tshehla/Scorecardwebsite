@@ -1,6 +1,9 @@
 #pmiVal,
 #prevPmiVal,
-#pmiScore {
+#pmiScore,
+#nmiVal,
+#prevNmiVal,
+#nmiScore {
     border: 2rem;
     border-radius: 0ex;
     width: 100%;
@@ -8,7 +11,8 @@
     text-align: center;
 }
 
-#card {
+#card,
+#nmi-card {
     background-color: #45b39d;
 }
 
