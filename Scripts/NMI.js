@@ -14,19 +14,18 @@ function getNMIScore() {
         bgColor = "#ec7063";
 
         if (nmiVal < prevnmiVal) {
-            alert(prevnmiVal + "\t" + nmiVal);
 
             score = aboveSlowing();
         } else {
             score = aboveGrowing();
         }
 
-        document.getElementById("nmi-nmi-card").style.backgroundColor = bgColor;
-        document.getElementById("nmi-nmi-card").style.color = " #5d6d7e";
+        document.getElementById("nmi-card").style.backgroundColor = bgColor;
+        document.getElementById("nmi-card").style.color = " #5d6d7e";
         document.getElementById("nmiVal").style.backgroundColor = bgColor;
         document.getElementById("prevNmiVal").style.backgroundColor = bgColor;
         document.getElementById("nmiScore").style.backgroundColor = bgColor;
-        document.getElementById("nmi-nmi-card").style.color = "#273746"
+        document.getElementById("nmi-card").style.color = "#273746"
         document.getElementById("nmiScore").value = score;
 
         //alert(bgColor + "\t" + score);

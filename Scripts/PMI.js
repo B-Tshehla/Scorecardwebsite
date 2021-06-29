@@ -172,22 +172,3 @@ function belowGrowing() {
         return score;
     }
 }
-
-
-
-//Consumer sentiment index/Connsumer confidence
-
-function getConsumerSent() {
-    conVal = document.getElementById("conSent").value;
-
-    //inflation
-
-    if (conVal > 54 && conVal < 63) {
-
-        alert("Hey")
-
-    }
-
-
-
-}
