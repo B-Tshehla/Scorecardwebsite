@@ -1,3 +1,5 @@
+//Suvery Manufaturing and non-manufauring 
+//Manufacturing PMI
 function getPMIScore() {
     // Selecting the input element and get its value 
     var pmiVal = document.getElementById("pmiVal").value;
@@ -15,12 +17,12 @@ function getPMIScore() {
             score = aboveGrowing();
         }
 
-        document.getElementById("card").style.backgroundColor = bgColor;
-        document.getElementById("card").style.color = " #5d6d7e";
+        document.getElementById("pmi-card").style.backgroundColor = bgColor;
+        document.getElementById("pmi-card").style.color = " #5d6d7e";
         document.getElementById("pmiVal").style.backgroundColor = bgColor;
         document.getElementById("prevPmiVal").style.backgroundColor = bgColor;
         document.getElementById("pmiScore").style.backgroundColor = bgColor;
-        document.getElementById("card").style.color = "#273746"
+        document.getElementById("pmi-card").style.color = "#273746"
         document.getElementById("pmiScore").value = score;
 
         //alert(bgColor + "\t" + score);
@@ -32,12 +34,12 @@ function getPMIScore() {
         } else {
             score = belowSlowing();
         }
-        document.getElementById("card").style.backgroundColor = bgColor;
-        document.getElementById("card").style.color = " #5d6d7e";
+        document.getElementById("pmi-card").style.backgroundColor = bgColor;
+        document.getElementById("pmi-card").style.color = " #5d6d7e";
         document.getElementById("pmiVal").style.backgroundColor = bgColor;
         document.getElementById("prevPmiVal").style.backgroundColor = bgColor;
         document.getElementById("pmiScore").style.backgroundColor = bgColor;
-        document.getElementById("card").style.color = "#273746"
+        document.getElementById("pmi-card").style.color = "#273746"
         document.getElementById("pmiScore").value = score;
 
     }
@@ -169,4 +171,23 @@ function belowGrowing() {
         score = -5;
         return score;
     }
+}
+
+
+
+//Consumer sentiment index/Connsumer confidence
+
+function getConsumerSent() {
+    conVal = document.getElementById("conSent").value;
+
+    //inflation
+
+    if (conVal > 54 && conVal < 63) {
+
+        alert("Hey")
+
+    }
+
+
+
 }

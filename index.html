@@ -19,9 +19,9 @@
 
         <div class=" row">
 
-            <div class="col-lg-6 mb-4">
+            <div class="col">
 
-                <div class="card" id="card" style="width: 18rem;">
+                <div class="card scoreCard" id="pmi-card" style="width: 18rem;">
 
                     <img src="images/usa.jpg" class="card-img-top" alt="...">
 
@@ -53,8 +53,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 mb-4">
-                <div class="card" id="nmi-card" style="width: 18rem;">
+            <div class="col">
+                <div class="card scoreCard" id="nmi-card" style="width: 18rem;">
                     <img src="images/usa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">ISM/Non Manufacturing NMI</h5>
@@ -79,7 +79,35 @@
                         </div>
 
 
-                        <a href="#" class="btn btn-primary" onclick="getPMIScore();">Generate Score</a>
+
+                        <a href="#" class="btn btn-primary" onclick="getNMIScore();">Generate Score</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card scoreCard" id="nmi" style="width: 18rem;">
+                    <img src="images/usa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Consumer Connfidence index</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Actual Data:</p>
+
+                                <input type="text" id="conSent" placeholder="Current consumer confident value....">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="scoreHead card-title"> TOTAL SCORE : </h5>
+                        </div>
+                        <div>
+
+                            <input id="conSntScore" type="text">
+                        </div>
+
+
+
+                        <a href="#" class="btn btn-primary" onclick="getConsumerSent();">Generate Score</a>
                     </div>
                 </div>
             </div>
@@ -92,7 +120,8 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="Scripts/PMI.js"></script>
+    <script src="Scripts/NMI.js"></script>
 </body>
 
 </html>
