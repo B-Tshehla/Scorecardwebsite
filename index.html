@@ -17,6 +17,8 @@
         <h1>Scorecards</h1>
 
 
+        <!--Manufacturing PMI-->
+
         <div class=" row">
 
             <div class="col">
@@ -53,6 +55,8 @@
                 </div>
             </div>
 
+            <!--Non Manufacturing-->
+
             <div class="col">
                 <div class="card scoreCard" id="nmi-card" style="width: 18rem;">
                     <img src="images/usa.jpg" class="card-img-top" alt="...">
@@ -85,6 +89,8 @@
                 </div>
             </div>
 
+            <!--Consumer Confident-->
+
             <div class="col">
                 <div class="card scoreCard" id="conSent-card" style="width: 18rem;">
                     <img src="images/usa.jpg" class="card-img-top" alt="...">
@@ -112,6 +118,34 @@
                 </div>
             </div>
 
+            <!--Building Permits-->
+            <div class="col">
+                <div class="card scoreCard" id="build-card" style="width: 18rem;">
+                    <img src="images/usa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Building Permits</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Actual Data:</p>
+
+                                <input type="text" id="buildVal" placeholder="Current building permits value....">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="scoreHead card-title"> TOTAL SCORE : </h5>
+                        </div>
+                        <div>
+
+                            <input id="buildScore" type="text">
+                        </div>
+
+
+
+                        <a href="#" class="btn btn-primary" onclick="getBuildingPermits();">Generate Score</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -123,6 +157,7 @@
     <script src="Scripts/PMI.js"></script>
     <script src="Scripts/NMI.js"></script>
     <script src="Scripts/conSent.js"></script>
+    <script src="Scripts/Building.js"></script>
 </body>
 
 </html>
