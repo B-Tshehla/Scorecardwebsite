@@ -148,6 +148,38 @@
 
         </div>
 
+        <div class=" row">
+            <div class="col">
+                <div class="card scoreCard" id="interest-card" style="width: 18rem;">
+                    <img src="images/usa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Interest Rates</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Actual Data:</p>
+
+                                <input type="text" id="interestVal" placeholder="Current PMI value....">
+                            </div>
+                            <div class="col">
+                                <p class="paraIn"> Please Enter Previous Data:</p>
+
+                                <input type="text" id="prevInterestVal" placeholder="Previous PMI value....">
+                            </div>
+                            <h5 class="scoreHead card-title"> TOTAL SCORE : </h5>
+                        </div>
+                        <div>
+
+                            <input id="interestScore" type="text">
+                        </div>
+
+
+
+                        <a href="#" class="btn btn-primary" onclick="getInterestRatesScore();">Generate Score</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -158,6 +190,7 @@
     <script src="Scripts/NMI.js"></script>
     <script src="Scripts/conSent.js"></script>
     <script src="Scripts/Building.js"></script>
+    <script src="Scripts/interestRates.js"></script>
 </body>
 
 </html>
