@@ -31,8 +31,8 @@ function getInterestRatesScore() {
 }
 
 function getPercentageChange() {
-    var currInterest = document.getElementById("interestVal").value;
-    var prevInterest = document.getElementById("prevInterestVal").value;
+    var currInterest = document.getElementById("cpiAUScore").value;
+    var prevInterest = document.getElementById("prevcpiAUScore").value;
     var change = 0;
 
     change = ((currInterest - prevInterest) / prevInterest) * 100;
@@ -46,8 +46,8 @@ function inflation() {
 
     document.getElementById("interest-card").style.backgroundColor = bgColor;
     document.getElementById("interest-card").style.color = " #5d6d7e";
-    document.getElementById("interestVal").style.backgroundColor = bgColor;
-    document.getElementById("prevInterestVal").style.backgroundColor = bgColor;
+    document.getElementById("cpiAUScore").style.backgroundColor = bgColor;
+    document.getElementById("prevcpiAUScore").style.backgroundColor = bgColor;
     document.getElementById("interestScore").style.backgroundColor = bgColor;
     document.getElementById("interest-card").style.color = "#273746"
 }
@@ -57,8 +57,8 @@ function deflation() {
 
     document.getElementById("interest-card").style.backgroundColor = bgColor;
     document.getElementById("interest-card").style.color = " #5d6d7e";
-    document.getElementById("interestVal").style.backgroundColor = bgColor;
-    document.getElementById("prevInterestVal").style.backgroundColor = bgColor;
+    document.getElementById("cpiAUScore").style.backgroundColor = bgColor;
+    document.getElementById("prevcpiAUScore").style.backgroundColor = bgColor;
     document.getElementById("interestScore").style.backgroundColor = bgColor;
     document.getElementById("interest-card").style.color = "#273746"
 }
